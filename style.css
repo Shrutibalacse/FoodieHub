@@ -1,0 +1,420 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* for fonts */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/* CSS variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* NAVIGATION BAR */
+#navbar {
+  position: relative;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center;
+    everything in centre */
+  height: 13vh;
+}
+/* pseudo selector */
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 1.5;
+}
+
+/* logo and img  */
+#logo {
+  margin: 12px 13px;
+}
+
+#logo img {
+  margin: 3px 5px;
+  height: 62px;
+}
+
+/* list */
+#navbar ul {
+  display: flex;
+  font-family: "Pacifico", cursive;
+  font-family: "Rubik Gemstones", cursive;
+}
+
+#navbar ul li {
+  /* color: aliceblue; */
+  list-style: none;
+  /* . . ni ayega */
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  display: block;
+  padding: 3px 23px;
+  border-radius: 20px;
+  color: aliceblue;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: aliceblue;
+}
+.btn1 {
+  padding: 10px;
+  border: 2px solid rgba(255, 131, 55, 0.42);
+  background-color: rgba(255, 131, 55, 0.42);
+  color: rgb(255, 255, 255);
+  margin: 2px 2px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  left: 445px;
+  position: relative;
+}
+.btn1:hover {
+  background-color: rgb(194, 144, 115);
+}
+/* HOme secetion */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 487px;
+  justify-content: center;
+  align-items: center;
+}
+/* pseudo selector */
+#home::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  background: url(../img/8.jpg) no-repeat center center/cover;
+  /* background: url(../img/main1.1.jpg) no-repeat center center/cover; */
+  /* ../ mtlb ek folder wwapis jana hai */
+  height: 586px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.95;
+}
+#home h1 {
+  font-family: "Pacifico", cursive;
+  font-family: "Rubik Gemstones", cursive;
+  color: black;
+  text-align: center;
+}
+
+#home p {
+  font-family: "Pacifico", cursive;
+  font-family: "Rubik Gemstones", cursive;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+/* Services section */
+.services-container {
+  background: #e9dfc4;
+  height: 558px;
+}
+#services {
+  margin: 15px;
+  display: flex;
+  /* bcoz 3boxes bnane hai iske ande */
+}
+#services .box {
+  border: 2px solid #84c6dd;
+  padding: 34px;
+  margin: 9px 20px;
+  border-radius: 20px;
+  background-color: #e3e0e0;
+  margin-bottom: 50px;
+}
+#services .box:hover {
+  color: black;
+  background-color: #84c6dd;
+}
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+  /* margin auto works only when display block and height ya width is set */
+}
+#services .box p {
+  font-family: "Pacifico", cursive;
+  font-family: "Rubik Gemstones", cursive;
+}
+
+/* additional popular food  */
+/* #card-sec .card{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(96, 18, 148);
+}
+#card-sec .card .image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #000;
+}
+#card-sec .card .image img {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+} */
+
+/* slideshow */
+#great-offer {
+  background: #000;
+}
+#great-offer h1 {
+  font-family: "Pacifico", cursive;
+  font-family: "Rubik Gemstones", cursive;
+  color: rgb(240, 230, 230);
+  text-align: center;
+}
+/* btn */
+/* #card-sec{
+  background-color:rgb(113, 219, 113);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+} */
+#great-offer .btn {
+  animation: shake 2s infinite;
+  width: 235px;
+  height: 111px;
+  border: none;
+  border-radius: 44px;
+  background-color: #f74b8d;
+  color: #fff;
+  font-size: 41px;
+  font-family: "Lucida Sans";
+  margin: 23px 42%;
+}
+@keyframes shake {
+  10% {
+    transform: scale(1.05) rotate(10deg);
+  }
+  20% {
+    transform: scale(1.05) rotate(-10deg);
+  }
+  30% {
+    transform: scale(1.05) rotate(10deg);
+  }
+  40% {
+    transform: none;
+  }
+  from {
+    background-color: #f74b8d;
+  }
+  to {
+    background-color: blue;
+  }
+  10% {
+    font-size: 18px;
+  }
+}
+/* --------- */
+.slowFade {
+  display: flex;
+  align-items: flex-start;
+  /* background: rgb(71, 112, 150); */
+  height: 558px;
+  overflow: hidden;
+  position: relative;
+}
+.slowFade .slide img {
+  position: absolute;
+  /* min-width: 100%;
+  min-height: 100%;
+  height: auto; */
+  height: 1000px;
+  margin: auto;
+  display: block;
+  background: #000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  opacity: 0;
+  transform: scale(1.5) rotate(15deg);
+  -webkit-animation: slowFade 32s infinite;
+  animation: slowFade 32s infinite;
+}
+.slowFade .slide:nth-child(3) img {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.slowFade .slide:nth-child(2) img {
+  -webkit-animation-delay: 16s;
+  animation-delay: 16s;
+}
+.slowFade .slide:nth-child(1) img {
+  -webkit-animation-delay: 24s;
+  animation-delay: 24s;
+}
+@keyframes slowFade {
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  40% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slowFade {
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  40% {
+    opacity: 0;
+  }
+}
+#Final Result .slider {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.card {
+  flex-shrink: 0;
+  width: 300px;
+  height: 200px;
+  margin-right: 16px;
+}
+
+/* Clint section  */
+#clients-section {
+  height: 344px;
+  position: relative;
+}
+
+#clients-section::before {
+  content: "";
+  position: absolute;
+  background: url("../img/1.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.75;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients img {
+  height: 137px;
+  width: 140px;
+}
+/* #clients img:hover {
+  color: black;
+  background-color: rgb(123, 127, 131);
+} */
+.clients-item {
+  padding: 30px;
+}
+
+/* contact-section */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("../img/contacts.jpg") no-repeat center center/cover;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 23px;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Pacifico", cursive;
+  font-family: "Rubik Gemstones", cursive;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box button {
+  font-family: "Rubik Gemstones", cursive;
+  border: 2px solid rgb(195 187 187);
+  background-color: rgba(136, 135, 129, 0.418);
+  border-radius: 10px;
+  font-size: 21px;
+  cursor: pointer;
+
+  display: block;
+  width: 50%;
+  margin: 16px 141px;
+  color: #000000;
+}
+
+#contact-box button:hover {
+  background-color: rgb(138, 130, 130);
+}
+footer {
+  background: #ad5050;
+  color: #fff8f8;
+  padding: 17px 20px;
+}
+/* utility class */
+.h-primary {
+  font-family: "Pacifico", cursive;
+  font-family: "Rubik Gemstones", cursive;
+  color: rgb(10, 10, 10);
+  font-size: 2.5rem;
+  padding: 19px;
+}
+.h-secondary {
+  font-family: "Pacifico", cursive;
+  font-family: "Rubik Gemstones", cursive;
+  color: rgb(10, 10, 10);
+  font-size: 1.5rem;
+  padding: 19px;
+}
+.btn {
+  padding: 2px 14px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(136, 135, 129, 0.418);
+  color: rgb(5, 5, 5);
+  margin: 38px;
+  font-size: 1.5rem;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(138, 130, 130);
+}
+.center {
+  text-align: center;
+}

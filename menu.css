@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  font-family: "Rubik Gemstones", cursive;
+  line-height: 22px;
+  background-color: #000;
+  color: #fff;
+  /* background-image: url(../img/naan.jpg) ; */
+}
+
+/* #menu{
+  border: 2px solid red;
+} */
+.main {
+  width: 1222px;
+  margin: 51px auto;
+  /* border: 2px solid rebeccapurple; */
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-title h1 {
+  text-transform: capitalize;
+  font-size: 35px;
+  position: relative;
+  display: inline;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.section-title h1::before {
+  content: "";
+  position: absolute;
+  width: 81px;
+  height: 3px;
+  background-color: blue;
+  bottom: 0;
+  transform: translateX(-8%);
+  left: 49px;
+}
+
+.section-title p {
+  margin-top: 26px;
+}
+
+.section-title a {
+  margin: 10px 5px;
+  position: relative;
+  left: 13px;
+  float: right;
+  bottom: 80px;
+  border: 2px solid;
+  padding: 4px;
+  color: #733943;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.single-menu {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  /* border: 2px solid blue; */
+}
+
+.menu-col h4 {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 599;
+  margin-bottom: 38px;
+  position: relative;
+}
+
+.main-menu .menu-col {
+  width: 34%;
+  /* border: 2px solid red; */
+}
+
+.menu-col h4::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: blue;
+  top: 29px;
+}
+
+.single-menu img {
+  width: 200px;
+  height: 155px;
+  border-radius: 50%;
+  border: 1px dashed #c82c2c;
+  padding: 3px;
+  margin: 15px;
+  transition: 0.2s;
+}
+
+.single-menu img:hover {
+  /* transform: rotate(360deg); */
+  transform: scale(1.15);
+}
+
+.single-menu .img-content {
+  margin: 25px;
+}
+
+.single-menu .img-content h5 {
+  text-transform: capitalize;
+  font-size: 17px;
+  border-bottom: 1px dashed;
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+.single-menu .img-content h5 span {
+  color: #c82c2c;
+  /* float: right; */
+  /* try this once */
+  font-style: italic;
+}
+
+/* s-corner */
+
+.sweet-dishes {
+  /* border: 2px solid orange; */
+  width: 1300px;
+  margin: 0px auto;
+}
+
+.smenu {
+  display: flex;
+  padding: 42px 50px 0px 50px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.s-head {
+  text-align: center;
+}
+
+.s-head h1 {
+  /* text-transform: capitalize;
+  font-size: 1.5rem;
+  padding-bottom: 20px; */
+  text-transform: capitalize;
+  font-size: 25px;
+  position: relative;
+  display: inline;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.s-head h1::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 3px;
+  background-color: blue;
+  bottom: 0;
+  transform: translateX(-8%);
+  left: 74px;
+}
+
+.s-head p {
+  padding-top: 30px;
+}
+
+.sdishes {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  width: 34%;
+}
+
+/* img size stuck */
+.sdishes img {
+  border: 1px dashed red;
+  padding: 3px;
+  border-radius: 50%;
+  width: 200px;
+  height: 150px;
+  margin: 15px;
+  transition: all 0.2s;
+}
+
+.sdishes img:hover {
+  transform: scale(1.15);
+}
+
+.sdishes .img-content {
+  margin: 9px;
+}
+
+.sdishes .img-content h5 {
+  font-size: 17px;
+  margin: 17px 12px;
+  text-transform: capitalize;
+  border-bottom: 1px dashed white;
+  padding-bottom: 13px;
+}
+
+.sdishes .img-content h5 span {
+  color: #951515;
+  font-style: italic;
+}
+
+.sdishes .img-content p {
+  margin: 0px 11px;
+}
+
+#btn {
+  background-color: #887f7f;
+  color: #ad5050;
+  width: 30px;
+  height: 30px;
+  left: 96%;
+  position: relative;
+  bottom: 91%;
+  margin: 35px 0px;
+  border: #887f7f;
+}
+
+#btn:hover::after {
+  content: " Slide To Top";
+  display: block;
+  position: absolute;
+  background-color: rgb(7, 7, 7);
+  padding: 20px;
+  bottom: 10px;
+  right: 30px;
+}
+
+footer {
+  background: #ad5050;
+  color: #fff8f8;
+  padding: 17px 20px;
+  text-align: center;
+}
+
+/* Responsive */
+/* @media only screen and (min-width:600px) and (max-width:1000px) {
+  .main {
+    width: 900px;
+  }  
+} */
